@@ -4,7 +4,7 @@
 #### The tests in this framework are written in BDD (behave) pattern using feature file.
 
 #### Folder structure:
-* There is a [src](master/src) folder and it has [test](master/src/test) folder.
+* There is a [src](/master/src) folder and it has [test](/master/src/test) folder.
 * Test has a java folder, in java folder there exists a resource folder that has the following
 * [Feature files](tree/master/src/test/java/resource/feature_files)
 * [Page objects](tree/master/src/test/java/resource/page_objects)
