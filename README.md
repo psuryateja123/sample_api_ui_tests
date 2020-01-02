@@ -23,7 +23,7 @@
 
 #### [Step definitions](src/test/java/resource/step_defs)
 * It has two step definition files
-* [news_search_story_pageObjects stepsDefs](src/test/java/resource/step_defs/news_search_story_stepDefs.java) is related to [News_search feature](src/test/java/resource/feature_files/news_search.feature).
+* [news_search_story stepsDefs](src/test/java/resource/step_defs/news_search_story_stepDefs.java) is related to [News_search feature](src/test/java/resource/feature_files/news_search.feature).
 * [UserStepDefinitions](src/test/java/resource/step_defs/UserStepDefinitions.java)is related to [Api_automation](src/test/java/resource/feature_files/api_automation.feature)
 
 #### [Utils](src/test/java/resource/utils): 
