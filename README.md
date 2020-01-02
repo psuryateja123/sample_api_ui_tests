@@ -48,10 +48,10 @@
 * To run the tests in Treatment cost feature file, open the terminal and navigate to the root folder of the project and type
 
 ```
- mvn clean test -Dcucumber.options="src/test/java/resource/feature_files --tags @smoke"
+ mvn clean test -Dcucumber.options="src/test/java/resource/feature_files --tags @ui_test"
 ```
 
-* As I have configured the tags as smoke and smoke1 in the feature file. 
+* As I have configured the tags as ui_test for running all the tests related to the UI and api_test for running all the tests that are related to API. 
 
 #### Viewing results:
 
