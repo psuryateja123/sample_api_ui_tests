@@ -6,40 +6,36 @@
 #### Folder structure:
 * There is a [src](src) folder and it has [test](src/test) folder.
 * Test has a java folder, in java folder there exists a resource folder that has the following
-* [Feature files](tree/master/src/test/java/resource/feature_files)
-* [Page objects](tree/master/src/test/java/resource/page_objects)
-* [Step definitions](tree/master/src/test/java/resource/step_defs)
-* [Utils](tree/master/src/test/java/resource/utils)
-* [Locators]tree/master/src/test/java/resource/locators)
+* [Feature files](src/test/java/resource/feature_files)
+* [Page objects](src/test/java/resource/page_objects)
+* [Step definitions](src/test/java/resource/step_defs)
+* [Utils](src/test/java/resource/utils)
+* [Locators](src/test/java/resource/locators)
 
-#### [Feature files](https://github.com/psuryateja123/davis_test/tree/master/src/test/java/resource/feature_files)
+#### [Feature files](src/test/java/resource/feature_files)
 * In this folder, there are two feature files.
-* [Registration](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/feature_files/regitration.feature): This feature file has all the scenarios related to registration and validatation.
-* [Login and Purchase](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/feature_files/login_and_purchase.feature).feature: This feature file has all the scenarios, that are related to product purchase.
+* [Api_automation](src/test/java/resource/feature_files/api_automation.feature): This feature file has all the scenarios api automation.
+* [News_search](src/test/java/resource/feature_files/news_search.feature).feature: This feature file has all the scenarios, UI tests.
 
-#### [Page objects](https://github.com/psuryateja123/davis_test/tree/master/src/test/java/resource/page_objects)
-* It has four class, 
-* In [details_page_object](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/page_objects/details_page_objects.java), I have used placed the methods that are the page objects that are related to details page.
-* In [Registration](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/page_objects/registration.java), I have placed the methods that are the page objects related to the registration page
-* In [Selection_page_object](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/page_objects/selection_page_objects.java), I have placed the methods that are the page objects related to the dress selection page.
-* In [sign_page_objects](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/page_objects/sign_page_objects.java), I have placed the methods that are the page objects related to the sign in page.
+#### [Page objects](src/test/java/resource/page_objects)
+* It has a class, 
+* In [news_search_story_pageObjects](src/test/java/resource/page_objects/news_search_story_pageObjects.java), I have placed the methods that are related to the News search.
 
-#### [Step definitions](https://github.com/psuryateja123/davis_test/tree/master/src/test/java/resource/step_defs)
+#### [Step definitions](src/test/java/resource/step_defs)
 * It has two step definition files
-* [Registration steps](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/step_defs/registration_steps.java) is related to [Registration feature](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/feature_files/regitration.feature).
-* [Login](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/step_defs/sign_in_Steps.java) and [Purchase](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/step_defs/selection_Steps.java)is related to [Login and purchase Feature](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/feature_files/login_and_purchase.feature)
+* [news_search_story_pageObjects stepsDefs](src/test/java/resource/step_defs/registration_steps.java) is related to [News_search feature](src/test/java/resource/feature_files/regitration.feature).
+* [Login](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/step_defs/sign_in_Steps.java) and [UserStepDefinitions](src/test/java/resource/step_defs/selection_Steps.java)is related to [Api_automation](src/test/java/resource/feature_files/api_automation.feature)
 
 #### [Utils](https://github.com/psuryateja123/davis_test/tree/master/src/test/java/resource/utils): 
 * In this folder there are two class, they are the supporting class for the project.
 * [Env.java](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/utils/Env.java) has url and the name of the browser, further configurations browserstack configurations can be added.
 * [RunTest.java](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/utils/RunTest.java) has browser driver configurations, cucumber options - location of feature files, location of steps definition files. In this class further browserstack configuration can be added.
-* [Email generator.java](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/utils/email_generator.java) is for generating a random emails with timestamp in it.
 
-#### [Locators](https://github.com/psuryateja123/davis_test/tree/master/src/test/java/resource/locators)
-* In this folder there are three class with the name respect to the name of the page in the website.
-* [Registration](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/locators/registration.java) has locators that are related to the registration page
-* [Selection page](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/locators/selection_page.java) has locators that are related to the dress selection page
-* [Sign in page](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/locators/sign_page.java) has locators related to the sign page
+
+#### [Locators](src/test/java/resource/locators)
+* In this folder there is a class with the name home page.
+* [homepage](src/test/java/resource/locators/homepage.java) has locators that are related to the registration page
+
 
 #### cloning the project:
 * open terminal and navigate to the location where the project need to be clone, then type
