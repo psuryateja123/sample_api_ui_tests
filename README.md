@@ -26,10 +26,10 @@
 * [news_search_story_pageObjects stepsDefs](src/test/java/resource/step_defs/registration_steps.java) is related to [News_search feature](src/test/java/resource/feature_files/regitration.feature).
 * [Login](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/step_defs/sign_in_Steps.java) and [UserStepDefinitions](src/test/java/resource/step_defs/selection_Steps.java)is related to [Api_automation](src/test/java/resource/feature_files/api_automation.feature)
 
-#### [Utils](https://github.com/psuryateja123/davis_test/tree/master/src/test/java/resource/utils): 
+#### [Utils](src/test/java/resource/utils): 
 * In this folder there are two class, they are the supporting class for the project.
-* [Env.java](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/utils/Env.java) has url and the name of the browser, further configurations browserstack configurations can be added.
-* [RunTest.java](https://github.com/psuryateja123/davis_test/blob/master/src/test/java/resource/utils/RunTest.java) has browser driver configurations, cucumber options - location of feature files, location of steps definition files. In this class further browserstack configuration can be added.
+* [Env.java](src/test/java/resource/utils/Env.java) has url and the name of the browser, further configurations browserstack configurations can be added.
+* [RunTest.java](src/test/java/resource/utils/RunTest.java) has browser driver configurations, cucumber options - location of feature files, location of steps definition files. In this class further browserstack configuration can be added.
 
 
 #### [Locators](src/test/java/resource/locators)
@@ -55,10 +55,11 @@
 
 #### Viewing results:
 
-* For viewing the results for the test run, open the [report.js](https://github.com/psuryateja123/davis_test/blob/master/davis/report.js) (open in a browser)
+* For viewing the results for the test run, open the [report.js](report.js) (open in a browser)
 
 #### Improvements:
 
 * There is a further room for expanding the framework by integrating BrowserStack to run on multiple browsers. 
 * Integration of Allure report for better visual representation, I have added to other projects in [JavaScript](https://github.com/psuryateja123/cypress_meetup_demo) and [Python](https://github.com/psuryateja123/python-behave)
 * Integration of framework to CI and adding build notifications to communication channels like - Slack, did it for my previous projects in [JavaScript](https://github.com/psuryateja123/cypress_meetup_demo) and [Python](https://github.com/psuryateja123/python-behave)
+* As I current do have the schema for the API, I could not able to proceed for the API schema validation.
