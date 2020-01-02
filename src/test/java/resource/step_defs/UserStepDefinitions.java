@@ -27,11 +27,11 @@ public class UserStepDefinitions {
     private RequestSpecification request;
 
 
-    @Then("The status code is (\\d+)")
-    public void verify_status_code(int statusCode){
-        given().when().get("https://jsonplaceholder.typicode.com/posts").then().statusCode(statusCode);
-    }
 
+    @Then("^The status code is (\\d+) for post$")
+    public void theStatusCodeIsForPost(int status_code) {
+        given().when().get("https://jsonplaceholder.typicode.com/posts").then().statusCode(status_code);
+    }
 
     @Given("User hit the webservice (.*)")
     public void user_hit_the_webservice(String WebServiceURL){
@@ -43,7 +43,6 @@ public class UserStepDefinitions {
         RestAssured.baseURI = WebServiceURL;
         RequestSpecification httpRequest = RestAssured.given();
         Response response = httpRequest.get(WebServiceURL);
-        //RestAssured.baseURI = "https://jsonplaceholder.typicode.com/posts";
         String userid = response.asString();
         Assert.assertFalse(userid.isEmpty());
     }
@@ -68,5 +67,16 @@ public class UserStepDefinitions {
                 .assertThat()
                 .body(data, not(nullValue()));
     }
+
+    @Then("^The status code is (\\d+) for comments$")
+    public void theStatusCodeIsForComments(int status_code) {
+        given().when().get("https://jsonplaceholder.typicode.com/comments").then().statusCode(status_code);
+    }
+
+    @Then("^The status code is (\\d+) for users$")
+    public void theStatusCodeIsForUsers(int status_code) {
+        given().when().get("https://jsonplaceholder.typicode.com/users").then().statusCode(status_code);
+    }
+
 }
 
