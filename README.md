@@ -1,7 +1,7 @@
 # sample_api_ui_tests
 # Test guidence 
 
-#### The tests in this framework are written in BDD (behave) pattern using feature file.
+#### The tests in this framework are written in BDD (Cucumber) pattern using feature file with Java.
 
 #### Folder structure:
 * There is a [src](src) folder and it has [test](src/test) folder.
