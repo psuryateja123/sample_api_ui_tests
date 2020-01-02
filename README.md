@@ -40,7 +40,7 @@
 #### cloning the project:
 * open terminal and navigate to the location where the project need to be clone, then type
 ```
- git clone https://github.com/psuryateja123/davis_test.git
+ git clone https://github.com/psuryateja123/sample_api_ui_tests.git
 ```
 
 #### Running the test:
