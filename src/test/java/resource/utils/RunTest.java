@@ -10,10 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 
-/**
- * Created by surya on 13/11/2019.
- */
-
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"pretty","html:test-html-report","json:target/test-report.json"},
